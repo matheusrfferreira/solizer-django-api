@@ -1,0 +1,1 @@
+web: gunicorn solizerapi.wsgi --log-file - 
