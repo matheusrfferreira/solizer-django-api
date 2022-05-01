@@ -1,7 +1,5 @@
 # Solizer-API
 
-## Get list of Things
-
 ### Register
 
 `POST https://solizer-api.herokuapp.com/api/register/`
