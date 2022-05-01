@@ -11,7 +11,6 @@ class UserSerializer(serializers.Serializer):
     cell_phone_number = serializers.CharField(max_length=255)
     address = serializers.CharField(max_length=255, required=True)
     cpf = serializers.CharField(max_length=11, required=True)
-    #picture_url = serializers.URLField(required=False)
     cnpj = serializers.CharField(max_length=14, required=False)
     user_type = serializers.IntegerField(required=True)
 
@@ -19,3 +18,21 @@ class UserSerializer(serializers.Serializer):
 class LoginSerializer(serializers.Serializer):
     username = serializers.CharField(max_length=255)
     password = serializers.CharField(max_length=255)
+
+
+class ClientSerializer(serializers.Serializer):
+    username = serializers.CharField(max_length=255)
+    first_name = serializers.CharField(max_length=255)
+    last_name = serializers.CharField(max_length=255)
+    email = serializers.CharField(max_length=255)
+    cell_phone_number = serializers.CharField(max_length=255)
+    address = serializers.CharField(max_length=255)
+
+
+class IntegratorSerializer(serializers.Serializer):
+    username = serializers.CharField(max_length=255)
+    first_name = serializers.CharField(max_length=255)
+    last_name = serializers.CharField(max_length=255)
+    email = serializers.CharField(max_length=255)
+    cell_phone_number = serializers.CharField(max_length=255)
+    address = serializers.CharField(max_length=255)
